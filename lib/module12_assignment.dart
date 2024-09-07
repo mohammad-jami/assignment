@@ -8,17 +8,19 @@ class Module12Assignment extends StatefulWidget {
 }
 
 class _Module12AssignmentState extends State<Module12Assignment> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
         title: const Text('Demo App'),
         actions: const [
-          Padding(padding: EdgeInsets.all(16),
+          Padding(
+            padding: EdgeInsets.all(16),
             child: Text('Item 1'),
           ),
-          Padding(padding: EdgeInsets.all(16),
+          Padding(
+            padding: EdgeInsets.all(16),
             child: Text('Item 2'),
           ),
         ],
@@ -58,29 +60,42 @@ class _Module12AssignmentState extends State<Module12Assignment> {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(24, 96, 24, 24 ),
+          padding: const EdgeInsets.fromLTRB(24, 96, 24, 24),
           child: Column(
             children: <Widget>[
               const Text(
-                'Flutter Web.', style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold,),
+                'Flutter Web.',
+                style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              const Text('The Basics', style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold,),),
-              const Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,'),
-             const SizedBox(height: 24,),
+              const Text(
+                'The Basics',
+                style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Text(
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,'),
+              const SizedBox(
+                height: 24,
+              ),
               Padding(
-               padding: const EdgeInsets.all(24),
-               child: ElevatedButton(
-                 onPressed: () {  },
-                 style: ElevatedButton.styleFrom(
-                   backgroundColor: Colors.green,
-                   shape: RoundedRectangleBorder(
-                     borderRadius: BorderRadius.circular(8), // Adjust the radius to your preference
-                   ),
-                 ),
-                 child: const Text('Join Course'),
-
-               ),
-             )
+                padding: const EdgeInsets.all(24),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          8), // Adjust the radius to your preference
+                    ),
+                  ),
+                  child: const Text('Join Course'),
+                ),
+              )
             ],
           ),
         ),
@@ -88,5 +103,3 @@ class _Module12AssignmentState extends State<Module12Assignment> {
     );
   }
 }
-
-
